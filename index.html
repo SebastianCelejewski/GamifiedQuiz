@@ -1,0 +1,41 @@
+﻿<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Gamified Quiz</title>
+</head>
+<body onload="initialize();">
+	<h1>Gamified Quiz</h1>
+	<fieldset>
+		<legend id="monsterDistance">Monster</legend>
+		<img src="player.png"></img>
+		<img id="monster" src="monster.png"></img>
+	</fieldset>
+
+	<fieldset>
+		<legend>Progress</legend>
+		<div id="progress"/>
+	</fieldset>
+
+	<fieldset>
+		<legend>Question</legend>
+		<div id="question"/>
+	</fieldset>
+
+	<fieldset>
+		<legend>Answers</legend>
+		<form id="answers">
+			<button type="submit" onclick="submitAnswer(); return false;">Submit</button>
+		</form>
+	</fieldset>
+
+	<fieldset>
+		<legend>Status</legend>
+		<div id="status"></div>
+	</fieldset>
+
+</body>
+<script type="text/javascript" src="questions.js"></script>
+<script type="text/javascript" src="game.js"></script>
+</html>
